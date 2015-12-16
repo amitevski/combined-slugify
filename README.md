@@ -7,7 +7,7 @@ This module creates a slug by utilizing 2 other libraries.
 ## Install
 
 ```
-npm install combined-slug
+npm install combined-slugify
 ```
 
 ## Usage

@@ -1,6 +1,6 @@
 {
   "name": "combined-slugify",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Combine multiple slugifiers to get a better result",
   "main": "slugify.js",
   "scripts": {

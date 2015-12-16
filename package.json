@@ -1,0 +1,23 @@
+{
+  "name": "combined-slugify",
+  "version": "1.0.0",
+  "description": "Combine multiple slugifiers to get a better result",
+  "main": "slugify.js",
+  "scripts": {
+    "test": "mocha slugify.test.js"
+  },
+  "keywords": [
+    "slugify",
+    "nodejs"
+  ],
+  "author": "Aco Mitevski",
+  "license": "MIT",
+  "dependencies": {
+    "slug": "0.9.1",
+    "transliteration": "0.1.1"
+  },
+  "devDependencies": {
+    "expect": "1.13.3",
+    "mocha": "2.3.4"
+  }
+}

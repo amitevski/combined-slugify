@@ -8,7 +8,7 @@ describe('combined-slugify', function() {
   it('should not delete & symbol', function() {
     var text = 'Haus & Garten',
     expected = 'haus-and-garten';
-    expect(slugify(text)).toEqual(expected);
+    expect(slugify(text, {lower: true})).toEqual(expected);
   });
   
   it('should not delete arabic letters', function() {
@@ -19,7 +19,12 @@ describe('combined-slugify', function() {
   
   it('should not delete cyrillic letters', function() {
     var text = 'Омйттам эррорибуз ты ючю. Кюм экз тота модюж новум',
-    expected = 'omjttam-erroribuz-ty-yuchyu.-kyum-ekz-tota-modyuzh-novum';
+    expected = 'omyttam-erroribuz-ty-yuchyu-kyum-ekz-tota-modyuzh-novum';
     expect(slugify(text)).toEqual(expected);
+  });
+  it('should allow changing node-slug mode', function() {
+    var text = 'Fürstenrieder Str.',
+      expected = 'furstenrieder-str'; // withouth the dot
+    expect(slugify(text, {lower: true})).toEqual(expected);
   });
 });

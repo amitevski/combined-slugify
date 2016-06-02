@@ -1,10 +1,10 @@
 {
   "name": "combined-slugify",
-  "version": "1.0.1",
   "description": "Combine multiple slugifiers to get a better result",
   "main": "slugify.js",
   "scripts": {
-    "test": "mocha slugify.test.js"
+    "test": "mocha slugify.test.js",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "keywords": [
     "slugify",
@@ -22,7 +22,8 @@
   },
   "devDependencies": {
     "expect": "1.13.3",
-    "mocha": "2.3.4"
+    "mocha": "2.3.4",
+    "semantic-release": "^4.3.5"
   },
   "bugs": {
     "url": "https://github.com/amitevski/combined-slugify/issues"

@@ -3,8 +3,11 @@
 var nodeslugify = require('slug');
 var translitslugify = require('transliteration').slugify;
 
-function slugify(text) {
-  var slug1 = nodeslugify(text, {mode: 'rfc3986'}),
+function slugify(text, options) {
+  if (!options) {
+    options = {};
+  }
+  var slug1 = nodeslugify(text, options),
     slug2 = translitslugify(text);
     
   if (slug1.length > slug2.length) {

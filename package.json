@@ -27,5 +27,6 @@
   },
   "bugs": {
     "url": "https://github.com/amitevski/combined-slugify/issues"
-  }
+  },
+  "version": "2.0.0"
 }

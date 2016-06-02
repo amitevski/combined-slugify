@@ -5,7 +5,7 @@ var translitslugify = require('transliteration').slugify;
 
 function slugify(text, options) {
   if (!options) {
-    options = {};
+    options = {mode: 'pretty', lower: true};
   }
   var slug1 = nodeslugify(text, options),
     slug2 = translitslugify(text);

@@ -23,10 +23,12 @@ slugify('你好，世界');
 ```
 
 
-Node slug supports multiple configurations options which you can pass into combined-slugify
+Node slug supports multiple configurations options which you can pass into combined-slugify.
+see [node-slug](https://github.com/dodo/node-slug) for details
+
 __Example__
 ```javascript
-var slugify = require('combined-slugify');
+var slugify = require('combined-slugify', {lower: false});
 slugify('Haus & Garten');
 // > Haus-and-Garten
 
@@ -38,10 +40,14 @@ slugify('Haus & Garten', {lower: true});
 
 ## Changelog
 
+### 2.0.1
+
+* add lower: true as default param
+
 ###  2.0.0
 
 * default mode for node-slug is pretty
-* added support to specify node-slug options see [node-slug](https://github.com/dodo/node-slug) for details
+* added support to specify node-slug options
 
 ### 1.x.x
 

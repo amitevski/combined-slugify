@@ -31,7 +31,7 @@ slugify('Haus & Garten');
 // > Haus-and-Garten
 
 slugify('Haus & Garten', {lower: true});
-// > gaus-and-garten
+// > haus-and-garten
 
 ```
 

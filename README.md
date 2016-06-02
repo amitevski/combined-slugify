@@ -44,9 +44,9 @@ slugify('Haus & Garten', {lower: true});
 
 ## Changelog
 
-### 2.0.1
+### 2.1.0
 
-* add lower: true as default param
+* add lower: true as default param for node-slug
 
 ###  2.0.0
 

@@ -32,8 +32,8 @@ see [node-slug](https://github.com/dodo/node-slug) for details
 
 __Example__
 ```javascript
-var slugify = require('combined-slugify', {lower: false});
-slugify('Haus & Garten');
+var slugify = require('combined-slugify');
+slugify('Haus & Garten', {lower: false});
 // > Haus-and-Garten
 
 slugify('Haus & Garten', {lower: true});
